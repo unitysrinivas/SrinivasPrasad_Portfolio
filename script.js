@@ -54,3 +54,24 @@ document.querySelector("form").addEventListener("submit", function (e) {
   alert("Thank you for your message! We'll get back to you soon.");
   this.reset();
 });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector(".fade-in").style.animationDelay = "0.3s";
+  });  
+
+  // Initialize EmailJS with your Public Key
+  emailjs.init("favwUshKdIwL2yyEk");
+
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    // Send form data to EmailJS
+    emailjs.sendForm("service_2m7ciup", "template_o05f5qv", this)
+      .then(function() {
+        document.getElementById("success-message").style.display = "block";
+        document.getElementById("contact-form").reset();
+      }, function(error) {
+        document.getElementById("error-message").style.display = "block";
+        console.error("Error:", error);
+      });
+  });

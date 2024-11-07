@@ -52,17 +52,20 @@ header {
 
 .nav-menu {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content:start;
+  padding-left: 2rem;
+  margin: 0;
+  align-items:start;
 }
 
 .nav-item {
   list-style: none;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 }
 
 .nav-link {
   color: white;
+  opacity: 1;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -245,7 +248,7 @@ h2 {
   padding: 20px;
 }
 
-.project-info h3 {
+.project-item h3 {
   margin-bottom: 10px;
   color: var(--ag-blue);
 }
@@ -344,7 +347,7 @@ footer {
   }
 
   .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
+    opacity: 1;
   }
 
   .hamburger.active .bar:nth-child(1) {
@@ -361,10 +364,11 @@ footer {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: var(--ag-blue);
-    width: 100%;
+    background-color:var(--text-color);
+    width: 40vw;
+    height:100vw;
     text-align: center;
-    transition: 0.3s;
+    transition: 0.65s;
   }
 
   .nav-item {
@@ -383,4 +387,112 @@ footer {
   .hero p {
     font-size: 1.2rem;
   }
+}
+
+/* Fade-in effect for page load */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Back button styling */
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button i {
+  margin-right: 0.5rem;
+}
+
+.back-button:hover {
+  color: #0056b3;
+  transform: translateX(-4px);
+}
+
+/* Image container with zoom effect */
+.image-container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.05);
+}
+
+/* Project title and technologies list animations */
+#project-title {
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+  animation: slideInFromLeft 0.8s ease-in-out;
+}
+
+#project-technologies {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  animation: slideInFromRight 0.8s ease-in-out;
+}
+
+#project-technologies li {
+  background-color: #f1f1f1;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+/* Slide animations */
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.project-item{
+  text-decoration: none;
+
 }
