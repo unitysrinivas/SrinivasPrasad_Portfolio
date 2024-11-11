@@ -413,3 +413,113 @@ header {
   }
 }
 
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a); /* Gradient background */
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color: #f4af1b;
+  margin-bottom: 40px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff; /* White background for form */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left; /* Align labels and inputs */
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%; /* Full-width inputs */
+  padding: 12px;
+  border: 1px solid #ddd; /* Subtle border for inputs */
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: inherit;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #f4af1b; /* Highlighted border on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(244, 175, 27, 0.5); /* Subtle glow effect */
+}
+
+.form-group textarea {
+  height: 150px;
+  resize: vertical; /* Allow vertical resizing */
+}
+
+/* Button Styling */
+.contact-form .btn {
+  display: block;
+  margin: 20px auto 0; /* Center the button */
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(135deg, #f4af1b, #d08c00); /* Button gradient */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.contact-form .btn:hover {
+  transform: scale(1.1); /* Slight scaling effect */
+  box-shadow: 0 5px 15px rgba(244, 175, 27, 0.4); /* Glow effect */
+}
+
+/* Feedback Messages */
+.feedback-message {
+  font-size: 1rem;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  display: none; /* Hidden by default */
+}
+
+.feedback-message.success {
+  background-color: #28a745; /* Green background for success */
+  color: #ffffff;
+}
+
+.feedback-message.error {
+  background-color: #dc3545; /* Red background for error */
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .btn {
+    font-size: 0.9rem; /* Adjust font size for buttons */
+  }
+}
+
