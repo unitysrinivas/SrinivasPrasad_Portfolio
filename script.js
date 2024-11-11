@@ -60,13 +60,13 @@ document.querySelector("form").addEventListener("submit", function (e) {
   });  
 
   // Initialize EmailJS with your Public Key
-  emailjs.init("favwUshKdIwL2yyEk");
+  emailjs.init("DvMm89O8_86UI001k");
 
   document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault();
 
     // Send form data to EmailJS
-    emailjs.sendForm("service_2m7ciup", "template_o05f5qv", this)
+    emailjs.sendForm("service_8njl0co", "template_la6unyf", this)
       .then(function() {
         document.getElementById("success-message").style.display = "block";
         document.getElementById("contact-form").reset();
