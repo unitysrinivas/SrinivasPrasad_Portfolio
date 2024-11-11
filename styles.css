@@ -83,7 +83,6 @@ header {
 }
 
 
-
 .hero-content {
   display: flex;
   flex-direction: row; /* Horizontally aligns photo and text */
@@ -92,6 +91,26 @@ header {
   max-width: 1200px;
   width: 100%;
   justify-content: center;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 700px; 
+  height: auto;
+  border-radius: 15px; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  border: 5px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-text {
+  flex: 2;
+  text-align: left; /* Align text to the left */
 }
 
 .hero h1 {
@@ -109,16 +128,24 @@ header {
   margin-bottom: 20px;
 }
 
+
 .hero .typed-text {
   color: #00d4ff;
   font-weight: bold;
 }
 
+.hero-brief {
+  font-size: 1.2rem;
+  color: #d1d1d1;
+  margin-bottom: 20px;
+}
+
 .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin: 20px 0;
   gap: 15px;
+  margin-top: 20px;
 }
 
 .social-icons a {
@@ -660,6 +687,14 @@ header {
 
   .hero-text {
     text-align: center; /* Center text on smaller screens */
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 15px;
+   
   }
 
   .social-icons a {
