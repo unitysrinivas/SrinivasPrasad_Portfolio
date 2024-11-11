@@ -257,6 +257,16 @@ header {
   border-color: #ffffff; /* Border color changes on hover */
 }
 
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-link:hover .project-item {
+  transform: scale(1.03); /* Slight zoom effect */
+  transition: transform 0.3s ease-in-out;
+}
+
 
 /* Image Styling */
 .project-image {
