@@ -636,10 +636,20 @@ header {
 }
 
 .footer p {
-  margin: 0;
+  margin: 10px 0;
   font-size: 1rem;
   color: #d1d1d1;
   line-height: 1.5;
+}
+
+.footer a {
+  color: #f4af1b;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffffff; /* Subtle hover effect for links */
 }
 
 /* Responsive Design */
@@ -648,3 +658,4 @@ header {
     font-size: 0.9rem; /* Slightly smaller font for mobile */
   }
 }
+
