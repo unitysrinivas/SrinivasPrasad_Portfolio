@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const options = {
-    strings: ["Game Developer", "Unity Developer", "Simulator Developer", "Shader Programmer", "Unity tutor", "Unreal Developer", "Freelancer"],
+    strings: ["Game Developer", "Unity Developer", "Simulator Developer", "Shader Programmer", "Unity Tutor", "Unreal Developer", "Freelancer"],
     typeSpeed: 50,
     backSpeed: 50,
     loop: true,
