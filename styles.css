@@ -489,12 +489,14 @@ header {
 
 /* Contact Form Styling */
 .contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 30px;
-  background-color: #ffffff; /* White background for form */
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  max-width: 600px; /* Restrict the form width */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 30px; /* Inner padding for the form */
+  background-color: #ffffff; /* White background for better contrast */
+  border-radius: 10px; /* Smooth rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  box-sizing: border-box; /* Include padding in the width */
+  overflow: hidden; /* Ensure no content overflows */
 }
 
 .form-group {
@@ -511,13 +513,15 @@ header {
 
 .form-group input,
 .form-group textarea {
-  width: 100%; /* Full-width inputs */
-  padding: 12px;
-  border: 1px solid #ddd; /* Subtle border for inputs */
-  border-radius: 5px;
-  font-size: 16px;
-  font-family: inherit;
-  color: #333;
+  width: 100%; /* Ensure fields occupy full width of the container */
+  max-width: 100%; /* Prevent fields from exceeding the container width */
+  padding: 12px; /* Add internal padding for better spacing */
+  border: 1px solid #ddd; /* Subtle border for input fields */
+  border-radius: 5px; /* Rounded corners for inputs */
+  font-size: 16px; /* Legible font size */
+  font-family: inherit; /* Use the form's font */
+  color: #333; /* Darker text color for readability */
+  box-sizing: border-box; /* Include padding in the width */
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
