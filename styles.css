@@ -1,4 +1,10 @@
-/* Header Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+
 header {
   background-color: #1a1a1a;
   color: #ffffff;
@@ -28,9 +34,7 @@ header {
   gap: 20px;
 }
 
-.nav-item {
-  margin: 0;
-}
+
 
 .nav-link {
   color: #ffffff;
@@ -61,38 +65,9 @@ header {
   border-radius: 2px;
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .nav-menu {
-    position: absolute;
-    top: 60px;
-    right: -100%;
-    background-color: #1a1a1a;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    transition: right 0.3s ease-in-out;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-menu.active {
-    right: 0;
-  }
-
-  .nav-link {
-    font-size: 1.2rem;
-    padding: 10px;
-    text-align: center;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-}
-
-/* Hero Section */
 .hero {
+  padding: 0; 
+  margin: 0;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -105,17 +80,7 @@ header {
   color: #ffffff;
 }
 
-@keyframes gradient-animation {
-  0% {
-    background: linear-gradient(135deg, #1a1a1a, #000);
-  }
-  50% {
-    background: linear-gradient(135deg, #102a43, #1a1a1a);
-  }
-  100% {
-    background: linear-gradient(135deg, #1a1a1a, #102a43);
-  }
-}
+
 
 .hero-content {
   position: relative;
@@ -189,22 +154,7 @@ header {
 
 
 /* Mobile Adjustments */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5rem;
-  }
 
-  .hero p {
-    font-size: 1.2rem;
-  }
-
-  .social-icons a {
-    font-size: 1.2rem;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-  }
-}
 
 /* Skills Section */
 .skills {
@@ -345,13 +295,6 @@ header {
   margin: 0;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Services Section */
 .services {
   padding: 60px 20px;
@@ -404,13 +347,6 @@ header {
   font-size: 1rem;
   color: #555;
   line-height: 1.6;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* Contact Section */
@@ -580,18 +516,6 @@ header {
   color: #ffffff;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .contact-form {
-    padding: 20px; /* Adjust padding for smaller screens */
-  }
-
-  .btn {
-    font-size: 0.9rem; /* Adjust font size for buttons */
-  }
-}
-
-
 .contact-form .btn:hover {
   transform: scale(1.1); /* Slight scaling effect */
   box-shadow: 0 5px 15px rgba(244, 175, 27, 0.4); /* Glow effect */
@@ -616,21 +540,11 @@ header {
   color: #ffffff;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .contact-form {
-    padding: 20px; /* Adjust padding for smaller screens */
-  }
-
-  .btn {
-    font-size: 0.9rem; /* Adjust font size for buttons */
-  }
-}
 
 /* Footer Section */
 .footer {
   padding: 20px 0;
-  background: linear-gradient(135deg, #1a1a1a, #2a2a2a); /* Gradient background */
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a); 
   color: #ffffff;
   text-align: center;
 }
@@ -649,81 +563,114 @@ header {
 }
 
 .footer a:hover {
-  color: #ffffff; /* Subtle hover effect for links */
+  color: #ffffff; 
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .footer p {
-    font-size: 0.9rem; /* Slightly smaller font for mobile */
-  }
-}
-
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* Ensures borders are included in element dimensions */
-}
-
-/* Remove Extra Margins for Containers */
 .container {
   max-width: 1200px;
-  margin: 0 auto; /* Centers the container */
-  padding: 0 20px; /* Add padding only inside the container */
+  margin: 0 auto; 
+  padding: 0 20px; 
 }
 
-/* Specific Sections */
+
 .skills,
 .projects,
 .contact,
 .footer {
-  padding: 60px 20px; /* Uniform padding for sections */
-  margin: 0; /* Removes any default margins */
+  padding: 60px 20px; 
+  margin: 0; 
 }
 
 .skill-item,
 .project-item,
 .service-item {
-  margin: 0; /* Remove any margins inside */
-  padding: 20px; /* Ensures consistent spacing within the item */
-  border: 2px solid #f4af1b; /* Keeps the border but avoids extra white spaces */
-  border-radius: 10px; /* Rounded corners */
+  margin: 0; 
+  padding: 20px; 
+  border: 2px solid #f4af1b; 
+  border-radius: 10px; 
 }
 
-/* Footer Fix */
+
 .footer {
   padding: 20px 0;
-  margin: 0; /* Removes white space caused by margins */
+  margin: 0; 
   background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
 }
 
-/* Hero Section */
-.hero {
-  padding: 0; /* Ensures no padding creates extra space */
-  margin: 0; /* Aligns the hero to the edges */
-  height: 100vh; /* Ensures full height */
-}
+/* Responsive For Mobile */
 
-/* Remove Default List Spacing */
-.nav-menu {
-  margin: 0;
-  padding: 0;
-}
-
-.nav-item {
-  margin: 0; /* Removes extra margin between nav items */
-}
-
-/* Contact Form */
-.contact-form {
-  margin: 0 auto; /* Centers the form without extra space */
-  padding: 30px; /* Keeps internal spacing consistent */
-}
-
-/* Responsive Adjustments */
 @media (max-width: 768px) {
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    right: -100%;
+    background-color: #1a1a1a;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: right 0.3s ease-in-out;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+
   .contact-form {
     padding: 20px;
+  }
+
+  .footer p {
+    font-size: 0.9rem; 
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes gradient-animation {
+  0% {
+    background: linear-gradient(135deg, #1a1a1a, #000);
+  }
+  50% {
+    background: linear-gradient(135deg, #102a43, #1a1a1a);
+  }
+  100% {
+    background: linear-gradient(135deg, #1a1a1a, #102a43);
   }
 }
