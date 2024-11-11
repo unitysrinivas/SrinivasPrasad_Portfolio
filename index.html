@@ -1,158 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SrinivasPrasad's Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar container">
-        <a href="#home" class="logo">Srinivas Prasad</a>
-        <ul class="nav-menu">
-          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="hamburger" onclick="toggleMenu()">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
-    </header>
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SrinivasPrasad's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <h1 data-aos="fade-down">Hi, I'm <span class="highlight">Srinivas Prasad</span></h1>
-        <p data-aos="fade-up" data-aos-delay="100">
-          I'm a <span class="typed-text"></span>
-        </p>
-        <div class="social-icons">
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-            ><i class="fab fa-github"></i
-          ></a>
-        </div>
-        <a href="#contact" class="btn" data-aos="fade-up" data-aos-delay="200"
-          >Get in Touch</a
-        >
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar container">
+      <a href="#home" class="logo">Srinivas Prasad</a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-    </section>
-    
+    </nav>
+  </header>
 
-    <section id="skills" class="skills">
-      <div class="container">
-        <h2 data-aos="fade-up">Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-item" data-aos="fade-up">
-            <i class="fa-brands fa-unity"></i>
-            <h3>Unity Engine</h3>
-            <p>Expertise in developing immersive games and simulations using Unity3D, including AR/VR experiences.</p>
-          </div>
-          <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
-            <i class="fas fa-gamepad"></i>
-            <h3>Unreal Engine</h3>
-            <p>Skilled in creating high-quality 3D environments and realistic simulations using Unreal Engine.</p>
-          </div>
-          <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
-            <i class="fas fa-code"></i>
-            <h3>C# Programming</h3>
-            <p>Proficient in writing clean, modular, and scalable code for game mechanics, tools, and systems.</p>
-          </div>
-          <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
-            <i class="fas fa-file-code"></i>
-            <h3>C++ Programming</h3>
-            <p>Experience in performance-critical applications and game engine development using C++.</p>
-          </div>
-          <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
-            <i class="fas fa-network-wired"></i>
-            <h3>Multiplayer</h3>
-            <p>Proficient in Photon, SFS, and Socket programming for multiplayer game development.</p>
-          </div>
-          <div class="skill-item" data-aos="fade-up" data-aos-delay="500">
-            <i class="fas fa-bezier-curve"></i>
-            <h3>Shader Programming</h3>
-            <p>Skilled in Shader Graph and HLSL to create realistic lighting, materials, and visual effects.</p>
-          </div>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 data-aos="fade-down">Hi, I'm <span class="highlight">Srinivas Prasad</span></h1>
+      <p data-aos="fade-up" data-aos-delay="100">
+        I'm a <span class="typed-text"></span>
+      </p>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
+            class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i
+            class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+            class="fab fa-github"></i></a>
+      </div>
+      <a href="#contact" class="btn" data-aos="fade-up" data-aos-delay="200">Get in Touch</a>
+    </div>
+  </section>
+
+
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 data-aos="fade-up">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item" data-aos="fade-up">
+          <i class="fa-brands fa-unity"></i>
+          <h3>Unity Engine</h3>
+          <p>Expertise in developing immersive games and simulations using Unity3D, including AR/VR experiences.</p>
+        </div>
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-gamepad"></i>
+          <h3>Unreal Engine</h3>
+          <p>Skilled in creating high-quality 3D environments and realistic simulations using Unreal Engine.</p>
+        </div>
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-code"></i>
+          <h3>C# Programming</h3>
+          <p>Proficient in writing clean, modular, and scalable code for game mechanics, tools, and systems.</p>
+        </div>
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-file-code"></i>
+          <h3>C++ Programming</h3>
+          <p>Experience in performance-critical applications and game engine development using C++.</p>
+        </div>
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+          <i class="fas fa-network-wired"></i>
+          <h3>Multiplayer</h3>
+          <p>Proficient in Photon, SFS, and Socket programming for multiplayer game development.</p>
+        </div>
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="500">
+          <i class="fas fa-bezier-curve"></i>
+          <h3>Shader Programming</h3>
+          <p>Skilled in Shader Graph and HLSL to create realistic lighting, materials, and visual effects.</p>
         </div>
       </div>
-    </section>
-    
+    </div>
+  </section>
 
-    <section id="projects" class="projects">
-      <div class="container">
-        <h2 data-aos="fade-up">Projects</h2>
-        <div class="projects-grid">
-          <a href="VRDrivingSimulator.html" class="project-link">
-            <div class="project-item" data-aos="fade-up">
-              <div class="project-image">
-                <img src="images/p1.png" alt="VR Driving Simulator" />
-              </div>
-              <div class="project-info">
-                <h3 class="project-title">VR Driving Simulator</h3>
-                <p>
-                  A virtual reality simulator for training Indian Army recruits. It
-                  features dynamic terrains, realistic vehicle physics, and challenging
-                  scenarios to improve driving skills efficiently and safely.
-                </p>
-              </div>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 data-aos="fade-up">Projects</h2>
+      <div class="projects-grid">
+  
+        <!-- VR Driving Simulator -->
+        <a href="VRDrivingSimulator.html" class="project-link">
+          <div class="project-item" data-aos="fade-up">
+            <div class="project-image">
+              <img src="images/p1.png" alt="VR Driving Simulator" />
             </div>
-          </a>
-          <a href="SchilkaTankSimulator.html" class="project-link">
+            <div class="project-info">
+              <h3 class="project-title">VR Driving Simulator</h3>
+              <p>
+                A virtual reality simulator for training Indian Army recruits. It
+                features dynamic terrains, realistic vehicle physics, and challenging
+                scenarios to improve driving skills efficiently and safely.
+              </p>
+            </div>
+          </div>
+        </a>
+  
+        <!-- Schilka Tank Driving Simulator -->
+        <a href="SchilkaTankSimulator.html" class="project-link">
           <div class="project-item" data-aos="fade-up" data-aos-delay="100">
             <div class="project-image">
-              <img src="images/p2.jpg" alt="War Tank Simulator" />
+              <img src="images/p2.jpg" alt="Schilka Tank Simulator" />
             </div>
             <div class="project-info">
               <h3 class="project-title">Schilka Tank Driving Simulator</h3>
               <p>
-                A realistic tank-driving simulator designed for military training. 
-                Features include authentic tank controls, realistic terrains, and 
+                A realistic tank-driving simulator designed for military training.
+                Features include authentic tank controls, realistic terrains, and
                 battle scenarios for hands-on practice.
               </p>
             </div>
           </div>
-          </a>
-
-          <a href="DroneSimulators.html" class="project-link"></a>
+        </a>
+  
+        <!-- Military Drone Flying Simulator -->
+        <a href="DroneSimulators.html" class="project-link">
           <div class="project-item" data-aos="fade-up" data-aos-delay="200">
             <div class="project-image">
               <img src="images/p3.jpg" alt="Military Drone Simulator" />
@@ -167,8 +146,9 @@
             </div>
           </div>
         </a>
-
-        <a href="Rummy.html" class="project-link"></a>
+  
+        <!-- Moon Rummy -->
+        <a href="Rummy.html" class="project-link">
           <div class="project-item" data-aos="fade-up" data-aos-delay="300">
             <div class="project-image">
               <img src="images/p3.jpg" alt="Moon Rummy" />
@@ -176,105 +156,106 @@
             <div class="project-info">
               <h3 class="project-title">Moon Rummy</h3>
               <p>
-                An engaging endless runner game set in a magical land. Features
-                dynamic obstacles, collectible power-ups, and stunning visuals to
-                captivate players.
+                An engaging 13-card multiplayer game designed for Android and WebGL. Features cross-platform compatibility and immersive gameplay.
               </p>
             </div>
           </div>
         </a>
+  
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2 data-aos="fade-up">My Services</h2>
+      <div class="services-grid">
+        <div class="service-item" data-aos="fade-up">
+          <i class="fas fa-gamepad"></i>
+          <h3>Game Development</h3>
+          <p>
+            Designing and developing immersive games tailored for various platforms
+            with engaging mechanics and captivating visuals.
+          </p>
+        </div>
+        <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-cogs"></i>
+          <h3>Simulator Development</h3>
+          <p>
+            Building realistic simulators for training, education, and professional
+            use cases, including military and industrial applications.
+          </p>
+        </div>
+        <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-vr-cardboard"></i>
+          <h3>Virtual Reality Apps</h3>
+          <p>
+            Developing VR applications that transform how users interact, learn,
+            and play in immersive environments.
+          </p>
+        </div>
+        <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+          <i class="fas fa-eye"></i> <!-- Substitute for AR -->
+          <h3>Augmented Reality Apps</h3>
+          <p>
+            Crafting AR applications to blend the real world with digital
+            enhancements for interactive and engaging solutions.
+          </p>
         </div>
       </div>
-    </section>
-    
-    
+    </div>
+  </section>
 
-    <section id="services" class="services">
-      <div class="container">
-        <h2 data-aos="fade-up">My Services</h2>
-        <div class="services-grid">
-          <div class="service-item" data-aos="fade-up">
-            <i class="fas fa-gamepad"></i>
-            <h3>Game Development</h3>
-            <p>
-              Designing and developing immersive games tailored for various platforms
-              with engaging mechanics and captivating visuals.
-            </p>
-          </div>
-          <div class="service-item" data-aos="fade-up" data-aos-delay="200">
-            <i class="fas fa-cogs"></i>
-            <h3>Simulator Development</h3>
-            <p>
-              Building realistic simulators for training, education, and professional
-              use cases, including military and industrial applications.
-            </p>
-          </div>
-          <div class="service-item" data-aos="fade-up" data-aos-delay="300">
-            <i class="fas fa-vr-cardboard"></i>
-            <h3>Virtual Reality Apps</h3>
-            <p>
-              Developing VR applications that transform how users interact, learn,
-              and play in immersive environments.
-            </p>
-          </div>
-          <div class="service-item" data-aos="fade-up" data-aos-delay="400">
-            <i class="fas fa-eye"></i> <!-- Substitute for AR -->
-            <h3>Augmented Reality Apps</h3>
-            <p>
-              Crafting AR applications to blend the real world with digital
-              enhancements for interactive and engaging solutions.
-            </p>
-          </div>
+
+
+  <!-- Contact Section with EmailJS Integration -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 data-aos="fade-up">Get in Touch</h2>
+      <form id="contact-form" class="contact-form" data-aos="fade-up">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
         </div>
-      </div>
-    </section>
-    
-    
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p id="success-message" style="display: none" class="feedback-message success">
+        Your message has been sent successfully!
+      </p>
+      <p id="error-message" style="display: none" class="feedback-message error">
+        Oops! Something went wrong. Please try again.
+      </p>
+    </div>
+  </section>
 
-    <!-- Contact Section with EmailJS Integration -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2 data-aos="fade-up">Get in Touch</h2>
-        <form id="contact-form" class="contact-form" data-aos="fade-up">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-          </div>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
-        <p id="success-message" style="display: none" class="feedback-message success">
-          Your message has been sent successfully!
-        </p>
-        <p id="error-message" style="display: none" class="feedback-message error">
-          Oops! Something went wrong. Please try again.
-        </p>
-      </div>
-    </section>
-    
 
-    <!-- Footer Section -->
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; 2024 Srinivas Prasad's Portfolio. All rights reserved.</p>
-        <p>
-          <strong>Email:</strong> <a href="mailto:srinivasprasad34@gmail.com">srinivasprasad34@gmail.com</a> | 
-          <strong>Phone:</strong> <a href="tel:+918500925325">+918500925325</a>
-        </p>
-      </div>
-    </footer>
-    
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Srinivas Prasad's Portfolio. All rights reserved.</p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:srinivasprasad34@gmail.com">srinivasprasad34@gmail.com</a> |
+        <strong>Phone:</strong> <a href="tel:+918500925325">+918500925325</a>
+      </p>
+    </div>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="./script.js"></script>
-  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./script.js"></script>
+</body>
+
 </html>
