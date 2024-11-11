@@ -627,3 +627,24 @@ header {
   }
 }
 
+/* Footer Section */
+.footer {
+  padding: 20px 0;
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a); /* Gradient background */
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+  color: #d1d1d1;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer p {
+    font-size: 0.9rem; /* Slightly smaller font for mobile */
+  }
+}
