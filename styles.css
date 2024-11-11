@@ -659,3 +659,71 @@ header {
   }
 }
 
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures borders are included in element dimensions */
+}
+
+/* Remove Extra Margins for Containers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the container */
+  padding: 0 20px; /* Add padding only inside the container */
+}
+
+/* Specific Sections */
+.skills,
+.projects,
+.contact,
+.footer {
+  padding: 60px 20px; /* Uniform padding for sections */
+  margin: 0; /* Removes any default margins */
+}
+
+.skill-item,
+.project-item,
+.service-item {
+  margin: 0; /* Remove any margins inside */
+  padding: 20px; /* Ensures consistent spacing within the item */
+  border: 2px solid #f4af1b; /* Keeps the border but avoids extra white spaces */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Footer Fix */
+.footer {
+  padding: 20px 0;
+  margin: 0; /* Removes white space caused by margins */
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+}
+
+/* Hero Section */
+.hero {
+  padding: 0; /* Ensures no padding creates extra space */
+  margin: 0; /* Aligns the hero to the edges */
+  height: 100vh; /* Ensures full height */
+}
+
+/* Remove Default List Spacing */
+.nav-menu {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0; /* Removes extra margin between nav items */
+}
+
+/* Contact Form */
+.contact-form {
+  margin: 0 auto; /* Centers the form without extra space */
+  padding: 30px; /* Keeps internal spacing consistent */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 20px;
+  }
+}
