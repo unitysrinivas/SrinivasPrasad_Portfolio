@@ -67,7 +67,7 @@ header {
 }
 
 .hero {
-  padding: 0; 
+  padding: 20px; /* Added padding for better layout */
   margin: 0;
   height: 100vh;
   display: flex;
@@ -79,13 +79,19 @@ header {
   background: linear-gradient(135deg, #1a1a1a, #000);
   animation: gradient-animation 8s infinite alternate;
   color: #ffffff;
+  flex-direction: column; /* Stacks content vertically */
 }
 
 
 
 .hero-content {
-  position: relative;
-  z-index: 2;
+  display: flex;
+  flex-direction: row; /* Horizontally aligns photo and text */
+  align-items: center;
+  gap: 30px; /* Space between photo and text */
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
 }
 
 .hero h1 {
@@ -641,6 +647,19 @@ header {
 
   .hero p {
     font-size: 1.2rem;
+  }
+
+  .hero-content {
+    flex-direction: column; /* Stacks content vertically on smaller screens */
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 200px; /* Adjust image size for smaller screens */
+  }
+
+  .hero-text {
+    text-align: center; /* Center text on smaller screens */
   }
 
   .social-icons a {
