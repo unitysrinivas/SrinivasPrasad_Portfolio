@@ -169,19 +169,24 @@ header {
 
 .btn {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #f4af1b;
-  color: #1a1a1a;
-  text-decoration: none;
-  border-radius: 4px;
+  width: 150px; /* Ensure a consistent circular shape */
+  height: 50px; /* Adjust height for circular proportions */
+  line-height: 50px; /* Vertically center text */
+  text-align: center;
+  background: linear-gradient(135deg, #f4af1b, #d08c00);
+  color: #ffffff;
   font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 25px; /* Circular edges */
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .btn:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #f4af1b, 0 0 20px #d08c00;
 }
+
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {
