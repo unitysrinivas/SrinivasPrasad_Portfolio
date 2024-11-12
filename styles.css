@@ -707,6 +707,10 @@ header {
     text-align: center; /* Center text on smaller screens */
   }
 
+  body {
+    overflow-x: hidden; 
+  }
+  
   .social-icons {
     display: flex;
     justify-content: center;
