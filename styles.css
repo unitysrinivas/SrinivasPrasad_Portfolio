@@ -52,6 +52,17 @@ header {
   color: #1a1a1a;
 }
 
+/* Special styling for the Resume link */
+.nav-menu .nav-item:last-child .nav-link {
+  font-weight: bold;
+  color: #f4af1b;
+}
+
+.nav-menu .nav-item:last-child .nav-link:hover {
+  background-color: #ffffff;
+  color: #f4af1b;
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
