@@ -4,6 +4,10 @@
   box-sizing: border-box; 
 }
 
+body {
+  overflow-x: hidden; 
+}
+
 
 header {
   background-color: #1a1a1a;
@@ -677,6 +681,9 @@ header {
 
   .hamburger {
     display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
   }
 
   .hero h1 {
