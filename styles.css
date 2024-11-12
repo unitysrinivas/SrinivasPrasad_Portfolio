@@ -56,7 +56,6 @@ header {
   color: #1a1a1a;
 }
 
-/* Special styling for the Resume link */
 .nav-menu .nav-item:last-child .nav-link {
   font-weight: bold;
   color: #f4af1b;
@@ -82,7 +81,7 @@ header {
 }
 
 .hero {
-  padding: 20px; /* Added padding for better layout */
+  padding: 20px; 
   margin: 0;
   height: 100vh;
   display: flex;
@@ -94,15 +93,15 @@ header {
   background: linear-gradient(135deg, #1a1a1a, #000);
   animation: gradient-animation 8s infinite alternate;
   color: #ffffff;
-  flex-direction: column; /* Stacks content vertically */
+  flex-direction: column; 
 }
 
 
 .hero-content {
   display: flex;
-  flex-direction: row; /* Horizontally aligns photo and text */
+  flex-direction: row; 
   align-items: center;
-  gap: 30px; /* Space between photo and text */
+  gap: 30px; 
   max-width: 1200px;
   width: 100%;
   justify-content: center;
@@ -125,7 +124,7 @@ header {
 
 .hero-text {
   flex: 2;
-  text-align: left; /* Align text to the left */
+  text-align: left; 
 }
 
 .hero h1 {
@@ -183,16 +182,16 @@ header {
 
 .btn {
   display: inline-block;
-  width: 150px; /* Ensure a consistent circular shape */
-  height: 50px; /* Adjust height for circular proportions */
-  line-height: 50px; /* Vertically center text */
+  width: 150px; 
+  height: 50px; 
+  line-height: 50px; 
   text-align: center;
   background: linear-gradient(135deg, #f4af1b, #d08c00);
   color: #ffffff;
   font-weight: bold;
   font-size: 1rem;
   text-decoration: none;
-  border-radius: 25px; /* Circular edges */
+  border-radius: 25px; 
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -256,7 +255,7 @@ header {
 
 /* Styling for Skill Logos */
 .skill-logo {
-  width: 60px; /* Adjust as needed */
+  width: 60px; 
   height: auto;
   margin-bottom: 10px;
   display: inline-block;
@@ -285,7 +284,7 @@ header {
 /* Project Cards */
 .project-item {
   background: #1a1a1a;
-  border: 2px solid #f4af1b; /* Add a gold border */
+  border: 2px solid #f4af1b; 
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -299,7 +298,7 @@ header {
 .project-item:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-  border-color: #ffffff; /* Border color changes on hover */
+  border-color: #ffffff; 
 }
 
 .project-link {
@@ -308,7 +307,7 @@ header {
 }
 
 .project-link:hover .project-item {
-  transform: scale(1.03); /* Slight zoom effect */
+  transform: scale(1.03); 
   transition: transform 0.3s ease-in-out;
 }
 
@@ -341,7 +340,7 @@ header {
   font-size: 1.8rem;
   color: #f4af1b;
   margin-bottom: 10px;
-  text-decoration: none; /* Removes underline */
+  text-decoration: none; 
 }
 
 .project-info p {
@@ -408,7 +407,7 @@ header {
 /* Contact Section */
 .contact {
   padding: 60px 20px;
-  background: linear-gradient(135deg, #1a1a1a, #2a2a2a); /* Gradient background */
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a); 
   color: #ffffff;
   text-align: center;
 }
@@ -424,14 +423,14 @@ header {
   max-width: 600px;
   margin: 0 auto;
   padding: 30px;
-  background-color: #ffffff; /* White background for form */
+  background-color: #ffffff; 
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
 }
 
 .form-group {
   margin-bottom: 20px;
-  text-align: left; /* Align labels and inputs */
+  text-align: left; 
 }
 
 .form-group label {
@@ -443,9 +442,9 @@ header {
 
 .form-group input,
 .form-group textarea {
-  width: 100%; /* Full-width inputs */
+  width: 100%; 
   padding: 12px;
-  border: 1px solid #ddd; /* Subtle border for inputs */
+  border: 1px solid #ddd; 
   border-radius: 5px;
   font-size: 16px;
   font-family: inherit;
@@ -455,20 +454,20 @@ header {
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #f4af1b; /* Highlighted border on focus */
+  border-color: #f4af1b; 
   outline: none;
-  box-shadow: 0 0 5px rgba(244, 175, 27, 0.5); /* Subtle glow effect */
+  box-shadow: 0 0 5px rgba(244, 175, 27, 0.5); 
 }
 
 .form-group textarea {
   height: 150px;
-  resize: vertical; /* Allow vertical resizing */
+  resize: vertical; 
 }
 
 /* Contact Section */
 .contact {
   padding: 60px 20px;
-  background: linear-gradient(135deg, #1a1a1a, #2a2a2a); /* Gradient background */
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a); 
   color: #ffffff;
   text-align: center;
 }
@@ -481,19 +480,19 @@ header {
 
 /* Contact Form Styling */
 .contact-form {
-  max-width: 600px; /* Restrict the form width */
-  margin: 0 auto; /* Center the form horizontally */
-  padding: 30px; /* Inner padding for the form */
-  background-color: #ffffff; /* White background for better contrast */
-  border-radius: 10px; /* Smooth rounded corners */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  box-sizing: border-box; /* Include padding in the width */
-  overflow: hidden; /* Ensure no content overflows */
+  max-width: 600px; 
+  margin: 0 auto; 
+  padding: 30px; 
+  background-color: #ffffff; 
+  border-radius: 10px; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+  box-sizing: border-box; 
+  overflow: hidden; 
 }
 
 .form-group {
   margin-bottom: 20px;
-  text-align: left; /* Align labels and inputs */
+  text-align: left; 
 }
 
 .form-group label {
@@ -505,52 +504,52 @@ header {
 
 .form-group input,
 .form-group textarea {
-  width: 100%; /* Ensure fields occupy full width of the container */
-  max-width: 100%; /* Prevent fields from exceeding the container width */
-  padding: 12px; /* Add internal padding for better spacing */
-  border: 1px solid #ddd; /* Subtle border for input fields */
-  border-radius: 5px; /* Rounded corners for inputs */
-  font-size: 16px; /* Legible font size */
-  font-family: inherit; /* Use the form's font */
-  color: #333; /* Darker text color for readability */
-  box-sizing: border-box; /* Include padding in the width */
+  width: 100%; 
+  max-width: 100%;
+  padding: 12px; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  font-size: 16px;
+  font-family: inherit;
+  color: #333;
+  box-sizing: border-box; 
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #f4af1b; /* Highlighted border on focus */
+  border-color: #f4af1b;
   outline: none;
-  box-shadow: 0 0 5px rgba(244, 175, 27, 0.5); /* Subtle glow effect */
+  box-shadow: 0 0 5px rgba(244, 175, 27, 0.5); 
 }
 
 .form-group textarea {
   height: 150px;
-  resize: vertical; /* Allow vertical resizing */
+  resize: vertical; 
 }
 
 .contact-form .btn {
-  display: inline-block; /* Ensures the button respects its content size */
-  margin: 20px auto 0; /* Centers the button */
-  padding: 10px 20px; /* Provides adequate space around the text */
-  font-size: 1rem; /* Sets a consistent font size */
-  font-weight: bold; /* Makes the text bold */
-  color: #ffffff; /* White text color */
-  background: linear-gradient(135deg, #f4af1b, #d08c00); /* Gradient for visual appeal */
-  border: none; /* Removes any border */
-  border-radius: 25px; /* Rounded edges for a modern look */
-  text-align: center; /* Centers the text horizontally */
-  line-height: normal; /* Ensures no conflict with padding */
-  width: fit-content; /* Button adjusts width based on content */
-  white-space: nowrap; /* Prevents text wrapping */
-  box-sizing: border-box; /* Ensures padding is included in total width */
-  cursor: pointer; /* Shows pointer on hover */
+  display: inline-block;
+  margin: 20px auto 0; 
+  padding: 10px 20px; 
+  font-size: 1rem; 
+  font-weight: bold; 
+  color: #ffffff; 
+  background: linear-gradient(135deg, #f4af1b, #d08c00); 
+  border: none; 
+  border-radius: 25px; 
+  text-align: center; 
+  line-height: normal; 
+  width: fit-content; 
+  white-space: nowrap; 
+  box-sizing: border-box; 
+  cursor: pointer; 
   transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
 
 .contact-form .btn:hover {
-  transform: scale(1.1); /* Adds a hover effect */
-  box-shadow: 0 5px 15px rgba(244, 175, 27, 0.4); /* Glow effect */
+  transform: scale(1.1); 
+  box-shadow: 0 5px 15px rgba(244, 175, 27, 0.4);
 }
 
 /* Feedback Messages */
@@ -559,22 +558,22 @@ header {
   margin-top: 20px;
   padding: 10px;
   border-radius: 5px;
-  display: none; /* Hidden by default */
+  display: none; 
 }
 
 .feedback-message.success {
-  background-color: #28a745; /* Green background for success */
+  background-color: #28a745; 
   color: #ffffff;
 }
 
 .feedback-message.error {
-  background-color: #dc3545; /* Red background for error */
+  background-color: #dc3545; 
   color: #ffffff;
 }
 
 .contact-form .btn:hover {
-  transform: scale(1.1); /* Slight scaling effect */
-  box-shadow: 0 5px 15px rgba(244, 175, 27, 0.4); /* Glow effect */
+  transform: scale(1.1); 
+  box-shadow: 0 5px 15px rgba(244, 175, 27, 0.4); 
 }
 
 /* Feedback Messages */
@@ -583,16 +582,16 @@ header {
   margin-top: 20px;
   padding: 10px;
   border-radius: 5px;
-  display: none; /* Hidden by default */
+  display: none; 
 }
 
 .feedback-message.success {
-  background-color: #28a745; /* Green background for success */
+  background-color: #28a745; 
   color: #ffffff;
 }
 
 .feedback-message.error {
-  background-color: #dc3545; /* Red background for error */
+  background-color: #dc3545; 
   color: #ffffff;
 }
 
@@ -695,16 +694,16 @@ header {
   }
 
   .hero-content {
-    flex-direction: column; /* Stacks content vertically on smaller screens */
+    flex-direction: column; 
     text-align: center;
   }
 
   .hero-image img {
-    width: 200px; /* Adjust image size for smaller screens */
+    width: 200px; 
   }
 
   .hero-text {
-    text-align: center; /* Center text on smaller screens */
+    text-align: center; 
   }
 
   body {
