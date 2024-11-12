@@ -48,30 +48,29 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Form submission (you would typically send this data to a server)
-document.querySelector("form").addEventListener("submit", function (e) {
-  e.preventDefault();
-  alert("Thank you for your message! We'll get back to you soon.");
-  this.reset();
-});
+// Form submission
+document.addEventListener("DOMContentLoaded", () => {
+  const successMessage = document.getElementById("success-message");
+  const errorMessage = document.getElementById("error-message");
 
-  document.addEventListener("DOMContentLoaded", () => {
-    document.querySelector(".fade-in").style.animationDelay = "0.3s";
-  });  
+  if (!successMessage || !errorMessage) {
+    console.error("Feedback message elements not found in the DOM");
+    return;
+  }
 
   // Initialize EmailJS with your Public Key
   emailjs.init("DvMm89O8_86UI001k");
 
-  document.getElementById("contact-form").addEventListener("submit", function(event) {
+  document.getElementById("contact-form").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    // Send form data to EmailJS
     emailjs.sendForm("service_8njl0co", "template_la6unyf", this)
-      .then(function() {
-        document.getElementById("success-message").style.display = "block";
+      .then(function () {
+        successMessage.style.display = "block";
         document.getElementById("contact-form").reset();
-      }, function(error) {
-        document.getElementById("error-message").style.display = "block";
+      }, function (error) {
+        errorMessage.style.display = "block";
         console.error("Error:", error);
       });
   });
+});
